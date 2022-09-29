@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/fontawesome.min.css"
+        integrity="sha512-aP4LyQwPu7DAUAgYHVE2zZ0ZG02lDMcWtIsMG1H6VhvPICHEgy2RqF0igO8kCz+EuHmoxLekNvddm3g5VuPNfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins, sans-serif';
+    }
+
+    .header {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url('maroonimg.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: 0;
+
+        position: relative;
+
+    }
+
+    .header:before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        opacity: 0.3;
+        z-index: -1;
+
+        background: linear-gradient(to right, #991e62 0%, #3c80cd 0%, #f61659 100%);
+    }
+
+
+    .navbar:before {
+        content: "";
+        position: absolute;
+
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        opacity: 0.3;
+        z-index: -1;
+        background-image: linear-gradient(#f61659, rgba(0, 168, 255, 0.3)), url('maroonimg.jpg')
+    }
+
+    .nav-item a {
+        color: #fff !important;
+        font-weight: bold;
+
+    }
+
+
+    .headersection {
+        width: 100vw;
+        color: white;
+        position: relative;
+        text-align: center;
+        height: inherit;
+    }
+
+
+    .center-div {
+        width: 100%;
+        position: absolute;
+        height: auto;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+
+    p {
+
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: black;
+    }
+
+    .header-buttons a {
+        height: auto;
+        border: 1px solid #fff;
+        border-radius: 100px;
+        margin: 0px 5px;
+        padding: 12px 35px;
+        outline: none;
+        color: #fff;
+        line-height: 1.4;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .header-buttons a:hover {
+
+        color: #991e62;
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+
+    }
+
+    .headersection img {
+        transform: translateY(16rem);
+
+        left: 0;
+
+        width: 85rem;
+
+
+    }
+
+    .center-div p {
+        padding: 10px 0 20px 0;
+        color: white;
+        font-size: 1.3rem;
+
+    }
+
+    .header-extra-div {
+        width: 100%;
+        height: auto;
+        margin: 100px 0;
+        text-align: center;
+
+    }
+
+    .extra-div {
+        background: #fff;
+        border: medium none;
+        padding: 50px !important;
+
+        border-radius: 3px;
+        transition: 0.3s;
+    }
+
+    .extra-div:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(-20px);
+    }
+
+    .extra-div h2,
+    .servicesec h2 {
+        font-size: 1rem;
+        margin: 20px 0 15px 0;
+        font-weight: bold;
+        line-height: 1.1;
+        word-spacing: 4px;
+    }
+
+    .service-offers {
+        background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(235, 184, 204, 0.952));
+        margin-bottom: 50px;
+        padding: 50px 0;
+
+    }
+
+    .headings {
+        margin-bottom: 50px;
+    }
+
+    .headings h1 {
+
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .names h2 {
+        color: #2e2e2e;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: bold;
+
+
+    }
+
+    .service-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .progress {
+        height: 0.9rem !important;
+        margin-bottom: 25px !important;
+
+    }
+
+    i {
+        color: #991e62;
+    }
+
+    .project-work {
+        margin: 100px 0;
+    }
+
+
+    .project-work h1 {
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    .pricing {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        padding: 50px;
+    }
+
+    .pricing:before {
+        content: "";
+        position: absolute;
+
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        opacity: 0.3;
+        z-index: -1;
+        background-image: url('lastblue.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .money {
+        font-size: 40px;
+        line-height: 1;
+
+
+    }
+
+    .card {
+        transition: 0.4s ease;
+
+
+
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 2rem;
+
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+        background: white;
+        font-weight: fold;
+        padding: 10px 0 !important;
+
+    }
+
+    .card-text {
+        padding: 10px 0px !important;
+
+    }
+
+    .card a {
+        height: auto;
+        border: 1px solid #991e62;
+        border-radius: 100px;
+        margin: 0px 5px;
+        padding: 12px 35px;
+        outline: none;
+        color: #991e62;
+        line-height: 1.4;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .card:hover .btn {
+        text-decoration: none;
+        color: #f3eff1;
+        background: #991e62;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+
+    }
+
+    .card:hover .card-title,
+    .card:hover .money {
+        color: #991e62;
+
+    }
+
+    .card:hover {
+        transform: translateY(-20px);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+
+    }
+
+    .card-second {
+        transform: translateY(-20px);
+
+    }
+
+    .box img {
+        height: 20rem;
+    }
+
+    .box {
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        transition: 0.3s ease;
+    }
+
+    .box:hover {
+        background: linear-gradient(rgba(0, 168, 255, 0.3), rgba(255, 0, 212, 0.3));
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -60px !important;
+    }
+
+    .carousel-indicators li {
+        background-color: #991e62 !important;
+
+    }
+
+    .box a {
+        position: relative;
+
+    }
+
+    .box a img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .box a:after {
+        content: "\f10d";
+        font-family: FontAwesome;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #991e62;
+        position: absolute;
+        top: 120%;
+        left: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .box h1 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    .box h2 {
+        font-size: 13px;
+        font-weight: 400;
+        color: #666666;
+        margin-bottom: 20px;
+    }
+
+    .contactpage {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 80px 0px;
+        margin-top: 5rem;
+        background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(181, 225, 247, 0.3)), url('pink.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: -2;
+    }
+
+    button.btn {
+
+        color: #991e62;
+        border: 1px solid #fff;
+        border-radius: 100px;
+        margin: 0px 5px;
+        padding: 12px 35px;
+        outline: none;
+        height: auto;
+        cursor: pointer;
+        line-height: 1.4;
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    button.btn:hover:not([disabled]) {
+        background: #991e62 !important;
+        color: #fff !important;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+
+    }
+
+    .news-letter {
+        width: 100%;
+        height: auto;
+        margin: 80px auto;
+
+
+    }
+
+    .news-input {
+        border-radius: 100px 0px 0px 100px !important;
+        min-width: 150px;
+        min-height: 45px;
+    }
+
+
+    .input-group-text {
+        color: #000;
+        background: linear-gradient(rgba(0, 168, 255, 0.3), rgba(255, 0, 212, 0.3));
+        border-radius: 0 100px 100px 0;
+        min-width: 110px;
+        min-height: 45px;
+        padding-left: 10px;
+
+    }
+
+    .footersection {
+        width: 100%;
+        height: auto;
+        margin-bottom: -28px;
+        color: #fff;
+        bottom: 0;
+        padding: 79px 0 20px 0;
+        background: linear-gradient(rgba(0, 168, 255, 0.3), rgba(255, 0, 212, 0.3));
+        background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url('maroonimg.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: -1;
+        position: relative;
+
+    }
+
+
+    .footersection:before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        opacity: 0.2;
+        z-index: -1;
+
+        background: linear-gradient(to right, #991e62 0%, #3c80cd 0%, #f61659 100%);
+    }
+
+    .footersection p {
+        color: #fff;
+    }
+
+    .footersection li a {
+        text-decoration: none;
+
+        color: rgb(253, 251, 251);
+        font-size: 0.9rem;
+        line-height: 1.6;
+        font-weight: 400;
+        text-transform: capitalize;
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .footersection h2 {
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        font-size: 1.2rem !important;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #mybtn {
+        position: fixed;
+
+        right: 40px;
+        bottom: 20px;
+        border: none;
+        color: #fff;
+        background: #991e62;
+        z-index: 99;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #mybtn:hover {
+        color: #991e62;
+        background: #fff;
+    }
+
+    @media (max-width:786px) {
+        .nav-item {
+            text-align: center !important;
+
+
+        }
+
+        .headersection img {
+            transform: translateY(42rem);
+            width: 39rem;
+        }
+
+        .pricing {
+            height: auto;
+            margin-top: 50px;
+
+
+
+
+        }
+
+        .card {
+            margin-left: 6rem;
+            margin-bottom: 6rem;
+        }
+
+        .pricing:before {
+            content: "";
+            position: absolute;
+
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            opacity: 0.3;
+            z-index: -1;
+            background-image: url('lastblue.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+    }
+
+
+    @media (max-width:400px) {
+        .nav-item {
+            text-align: center !important;
+
+
+        }
+
+        .headersection img {
+            transform: translateY(35rem);
+            width: 24rem;
+        }
+
+        .pricing {
+            height: auto;
+            margin-top: 50px;
+
+
+
+
+        }
+
+
+        .center-div {
+            width: 100%;
+            position: absolute;
+            height: auto;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+        }
+
+        .card {
+
+            margin-left: -2rem;
+            margin-bottom: 6rem;
+        }
+
+
+        .contactpage {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            padding: 80px 0px;
+            margin-top: 5rem;
+            background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(181, 225, 247, 0.3)), url('pink.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: -2;
+        }
+
+        .pricing:before {
+            content: "";
+            position: absolute;
+
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            opacity: 0.3;
+            z-index: -1;
+            background-image: url('lastblue.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+
+
+        #mybtn {
+            position: fixed;
+
+            right: 50px;
+            bottom: 20px;
+            border: none;
+            color: #fff;
+            background: #991e62;
+            z-index: 99;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .footer-div:nth-child(2) {
+            text-align: left !important;
+
+
+        }
+
+        .footer-div {
+            margin: 25px 0px;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="header" id="topheader">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container text-uppercase p-2">
+                <a class="navbar-brand font-weight-bold text-white" href="#">HUMNA'S SITE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: #fff; z-index: 22!important;"></span>
+                </button>
+
+                <div class="collapse show navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#topheader">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourprices">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactid">Contact</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+        </nav>
+        <section class="headersection">
+            <div class="center-div">
+                <h1 class="font-weight-bold">
+                    I Am The Web Developer
+                </h1>
+                <p class="text-center">Humna creates websites that attracts the right kinds of visitors, because Website
+                    without visitors is like a ship lost in the horizon.</p>
+                <div class="header-buttons">
+                    <a href="#news">About Me</a>
+                    <a href="#contactid">Contact Me</a>
+                </div>
+
+
+
+            </div>
+
+            <img src="whitewave.png ">
+
+        </section>
+
+
+    </div>
+
+
+    <section class="header-extra-div">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href="#"><i class="fa fa-balance-scale fa-3x" aria-hidden="true"></i></a>
+                    <h2>Functional Websites</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim?
+                        Lorem ipsum dolor sitlorem
+
+                    </p>
+
+                </div>
+
+
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href="#"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+                    <h2>Hot designs</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim?
+                        Lorem ipsum dolor sitlorem
+
+                    </p>
+
+                </div>
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <a href="#"><i class="fa fa-snowflake-o fa-3x" aria-hidden="true"></i></a>
+                    <h2>User Friendly</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim?
+                        Lorem ipsum dolor sitlorem
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="service-offers" id="service">
+        <div class="container headings text-center">
+            <h1 class="font-weight-bold">
+                The Skills Humna Have
+            </h1>
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..</p>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-10 offset-1 offset-lg-0">
+                    <div class="names  my-3">
+                        <h2>HTML/HTML5</h2>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 100%">100%</div>
+                        </div>
+                    </div>
+                    <div class="names  my-3">
+                        <h2>CSS/CSS3</h2>
+                        <div class="progress w-100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 60%">60%</div>
+                        </div>
+                    </div>
+                    <div class="names  my-3">
+                        <h2>JAVASCRIPT</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                style="width: 70%">70%</div>
+                        </div>
+                    </div>
+                    <div class="names  my-3">
+                        <h2>BOOSTRAP</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="90"
+                                style="width: 80%">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="names  my-3">
+                        <h2>REACT</h2>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="90"
+                                style="width: 90%">90%</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 col-md-12 col-12 servicesec">
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa fa-snowflake-o fa-3x" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>User Friendly</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim?
+                                Lorem ipsum dolor sitlorem
+
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Hot designs</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim?
+                                Lorem ipsum dolor sitlorem
+
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-2 col-2 service-icons">
+                            <i class="fa fa-balance-scale fa-3x" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-10 col-10">
+                            <h2>Functional Websites</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim?
+                                Lorem ipsum dolor sitlorem
+
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="project-work">
+        <div class="container headings text-center">
+            <h1 class="font-weight-bold">
+                Number of Projects Humna Done
+            </h1>
+        </div>
+
+        <div class="container d-flex justify-content-around align-items-center text-center">
+            <div>
+                <h1 class="count">15</h1>
+                <p>Online Business Websites</p>
+            </div>
+
+            <div>
+                <h1 class="count">5</h1>
+                <p>Ecomerce Website</p>
+            </div>
+
+            <div>
+                <h1 class="count">10</h1>
+                <p>Fashion Website</p>
+            </div>
+
+            <div>
+                <h1 class="count">40</h1>
+                <p>News Website</p>
+            </div>
+
+            <div>
+                <h1 class="count">12</h1>
+                <p>Travelling Website</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pricing" id="ourprices">
+        <div class="container headings text-center">
+            <h1 class="font-weight-bold">
+                My economic Pricing
+            </h1>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 col-mid-12 ">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="officeimg.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Basics</h5>
+                            <p class="card-text"> $<span class="money">80</span>/ I will create your 1 page fully
+                                responsive static user friendly functional website using HTML, CSS.</p>
+                            <a href="#" class="btn ">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-mid-12 card-second">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="officeimg.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Standard</h5>
+                            <p class="card-text"> $<span class="money">120</span>/ I will create your 2 page fully
+                                responsive static website using HTML/HTML5, CSS/CSS3, Boostrap/Tailwind .</p>
+                            <a href="#" class="btn ">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 col-mid-12 ">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="officeimg.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Primary</h5>
+                            <p class="card-text"> $<span class="money">180</span>/ I will create your 5 page fully
+                                responsive userfriendly static website using HTML/HTML5, CSS/CSS3, Boostrap/Tailwind,
+                                React JS</p>
+                            <a href="#" class="btn ">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="happy-clients" id="clients">
+        <div class="container heading text-center">
+            <h1 class="font-weight-bold pt-3  ">
+                Testimonials
+            </h1>
+            <p class="text-capitalized pt-1">What my Satisfied Customers are Saying </p>
+        </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner container">
+                <div class="carousel-item active">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p1.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Kinza Ahmad</h1>
+                                <h2>Student</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p2.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Muhammad Ali</h1>
+                                <h2>Dentist</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p3.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Farooq Raza</h1>
+                                <h2>Teacher</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p4.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Humna Imran</h1>
+                                <h2>Queen</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p5.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Eman Shergeel</h1>
+                                <h2>MDC Manifacturer</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p6.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Abdullah Jalil</h1>
+                                <h2>Company Executive</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p7.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Faizan Khalid</h1>
+                                <h2>HR Manager</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p8.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Sarwat Gillani</h1>
+                                <h2>Actress</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="p10.jpg" class="img-fluid img-thumbnail"></a>
+                                <p class="m-4-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus,
+                                    pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit!</p>
+                                <h1>Muhammad Hamza</h1>
+                                <h2>Professor</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="contactpage" id="contactid">
+        <div class="container heading text-center">
+            <h1 class="font-weight-bold pt-3  ">
+                Contact Us
+            </h1>
+            <p class="text-capitalized pt-1">Hey I am looking forward to start a project with you </p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
+                    <form>
+                        <div class="form-group">
+
+                            <input type="text" class="form-control" id="name" required autocomplete="off"
+                                aria-describedby="emailHelp" placeholder="Enter Your name">
+
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="email" class="form-control" id="email" required autocomplete="off"
+                                aria-describedby="emailHelp" placeholder="Enter your email">
+
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <input type="number" class="form-control" id="number" required autocomplete="off"
+                                aria-describedby="emailHelp" placeholder="Enter Your Phone Number">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <textarea type="number" class="form-control" rows="4" id="message" required
+                                autocomplete="off" aria-describedby="emailHelp"
+                                placeholder="Enter Your Message"></textarea>
+
+
+                        </div>
+                        <div class=" form-btn d-flex justify-content-center form-btn ">
+                            <button type="submit" class="btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="news-letter" id="news">
+        <div class="container heading text-center">
+            <h1 class="font-weight-bold pt-3  ">
+                Subscribe To My Newsletter
+            </h1>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control news-input" placeholder="Your Email"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text " id="basic-addon2">Subscribe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footersection" id="footerdiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12 footer-div">
+                    <div>
+                        <h2>About Humna Imran</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure qui perferendis
+                            aperiam reiciendis architecto temporibus adipisci eligendi fuga perspiciatis asperiores!</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12 footer-div text-center">
+                    <div>
+                        <h2>Navigation Link</h2>
+                        <li><a href="#topheader">Home</a></li>
+                        <li><a href="#news">About Me</a></li>
+                        <li><a href="#ourprices">Price</a></li>
+                        <li><a href="#service">Services</a></li>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-12 col-12 footer-div">
+                    <div>
+                        <h2>News Letter</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure qui perferendis
+                            aperiam reiciendis architecto temporibus adipisci eligendi fuga perspiciatis asperiores!</p>
+                        <div class="container newsletter-footer">
+                            <div class="row">
+                                <div class="col-lg-12  col-12">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control news-input" placeholder="Your Email"
+                                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <span class="input-group-text " id="basic-addon2">Subscribe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-5 text-center">
+                <p> Copyright &copy; 2022 All Right Reserved..This Website Is made by Humna Imran</p>
+            </div>
+
+
+            <div class="scrolltop float-right">
+                <i class="fa fa-arrow-up" onclick="topfunction()" id="mybtn"></i>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        mybutton = document.getElementById('mybtn');
+        window.onscroll = function () { scrollfunction() };
+        function scrollfunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+
+            }
+
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topfunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+    </script>
+</body>
+
+</html>
