@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    display:flex;
+    flex-direction: row;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+    z-index: 1;
+  
+    background-color: black;
+}
+
+.left-nav{
+    display: flex;
+    
+    align-items: center;
+   
+    width:75%;
+}
+.left-nav li a{
+   
+    color: rgb(253, 250, 250);
+    padding: 2rem;
+    font-size: 1.7rem;
+   
+   text-decoration: none;
+   
+}
+
+.left-nav li a:hover{
+   
+    color:rgb(233, 165, 19);
+    
+}
+.left-nav li {
+    
+    list-style: none;
+   
+}
+
+.right-nav{
+    
+    
+    
+    width:25%;
+    text-align: right;
+    margin-top: 1.5rem;
+
+}
+.left-nav img{
+    width:6rem;
+    height:5rem;
+    border-radius: 70%;
+    border:2px solid black ;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.btn{
+    margin-top: 0.5rem;
+    
+   border-radius: 10px;
+ background: none;
+ color: white;
+ cursor: pointer;
+
+
+    width:4rem;
+    height:1.7rem;
+    border: 2px solid rgb(156, 58, 58);
+    
+}
+
+.btn:hover{
+    background-color: rgb(192, 177, 177);;
+
+    
+}
+.active{
+    width:100vw;
+    background: rgb(233, 165, 19) url('beauty1crop2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.background{
+    width:100vw;
+    background: rgb(233, 165, 19) url('beauty1crop2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.background1{
+    width:100vw;
+   
+
+    background:  rgb(233, 165, 19) url('beauty1crop3.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    max-width: 50%;
+    margin: auto;
+    height:80%;
+    
+}
+
+.first-half{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.second-half{
+    width:60%;
+    height:50%;
+    margin-left: 2rem;
+    
+}
+#home{
+    background-color: rgb(231, 226, 219);
+}
+.second-half img{
+    width: 100%;
+    height:100%;
+ 
+    padding: 2px 0;
+    border: 4px solid white;
+    border-radius: 250px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 41px;
+    
+    
+
+}
+.text-sm{
+    font-size: 18px;
+    
+
+}
+.text-big1{
+    font-size: 41px;
+    
+    
+
+}
+.text-sm1{
+    font-size: 18px;
+
+}
+.paras{
+    padding:65px;
+}
+.section{
+    font-family: 'Ubuntu', sans-serif;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width:80% ;
+    margin: auto;
+    padding: 16px 0px;
+    
+    
+
+}
+.left{
+  flex-direction: row-reverse;
+  margin-left: 10rem;
+  
+}
+.section img{
+    width:16rem;
+    height:16rem;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.sectionsybtag{
+    font-family: 'Ubuntu', sans-serif;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right:5%;
+    top:15px;
+    display: none;
+
+
+}
+.line{
+    width:33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background:  rgb(24, 23, 23) url('beauty1crop2.jpg');
+    background-blend-mode: darken;
+    color: white;
+ }
+
+
+@media only screen and (max-width :1140px){
+
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding: 2rem;
+        height: 400px;
+        transition: all 0.3s ease-out;
+        background-color: black;
+    }
+    .left-nav{
+        
+        display: flex;
+        flex-direction: column;
+        
+        align-items:center;
+       
+        width:57%;
+    }
+   
+   
+    
+    .right-nav{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+.active{
+    width:100vw;
+    background: rgb(233, 165, 19) url('beauty1crop2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+    
+    
+   .burger{
+    display: block;
+   }
+  .height-nav-resp{
+    height:72px;
+  }
+
+  .visibilty-resp{
+    opacity: 0;
+  }
+
+  .background{
+    width:100vw;
+   
+    background: black;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: aliceblue;
+    max-width: 100%;
+    margin: auto;
+    height:80%;
+    
+}
+.second-half img{
+    width: 80%;
+    height:80%;
+ 
+    padding: 2px 0;
+    border: 4px solid white;
+    border-radius: 250px;
+    display: block;
+    margin: auto;
+}
+.text-big1{
+    font-size: 44px;
+    text-align: center;
+    
+
+}
+.text-sm1{
+    font-size: 28px;
+    text-align: center;
+
+}
+.btn{
+    
+    margin-top: 0.5rem;
+    text-align: center;
+    
+   border-radius: 10px;
+ background: none;
+ color: white;
+ cursor: pointer;
+
+
+    width:5rem;
+    height:1.9rem;
+    border: 2px solid rgb(233, 165, 19);
+    
+}
+.section{
+   flex-direction: column-reverse;
+    
+    
+
+}
+
+
+
+
+}
+
+
+
+@media screen and (max-width :400px){
+
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding: 2rem;
+        height: 400px;
+        transition: all 0.3s ease-out;
+    }
+    .left-nav{
+        
+        display: flex;
+        flex-direction: column;
+        
+        align-items:center;
+       
+        width: 57%;
+    }
+   
+   
+    .left-nav li a{
+   
+        color: rgb(253, 250, 250);
+        padding: 1.3rem;
+        font-size: 1.0rem;
+       
+       text-decoration: none;
+       
+    }
+    .right-nav{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    
+   .burger{
+    display: block;
+   }
+  .height-nav-resp{
+    height:72px;
+  }
+
+  .visibilty-resp{
+    opacity: 0;
+  }
+
+  .background{
+    width:100vw;
+   
+    background: black;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: aliceblue;
+    max-width: 100%;
+    margin: auto;
+    height:80%;
+    
+}
+
+
+.paras{
+    padding:0px 1px;
+}
+
+.left{
+    flex-direction: row-reverse;
+    margin-left: 3rem;
+    
+  }
+
+.text-big{
+   
+    font-size: 31px;
+
+    
+    
+
+}
+.text-sm{
+    font-size: 15px;
+  
+
+}
+
+.text-big1{
+   
+    font-size: 31px;
+    text-align: center;
+    
+    
+
+}
+.text-sm1{
+    font-size: 15px;
+   
+    text-align: center;
+
+}
+.second-half img{
+    width: 80%;
+    height:80%;
+ 
+    padding: 1px 0;
+    border: 4px solid white;
+    border-radius: 250px;
+    display: block;
+    margin: auto;
+}
+
+.btn{
+    
+    margin-top: 0.5rem;
+    text-align: center;
+    
+   border-radius: 10px;
+ background: none;
+ color: white;
+ cursor: pointer;
+
+
+    width:5rem;
+    height:1.9rem;
+    border: 2px solid rgb(233, 165, 19);
+    
+}
+.section{
+     
+    flex-direction: column;
+   
+    
+    
+
+}
+
+
+.footer{
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+  padding-top: 2rem;
+    background-color: #000;
+    color: white;
+ }
+
+
+}
+    
+@media only screen and (max-width :600px){
+
+    
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding: 2rem;
+        height: 400px;
+        transition: all 0.3s ease-out;
+    }
+    .left-nav{
+        
+        display: flex;
+        flex-direction: column;
+        
+        align-items:center;
+       
+        width:57%;
+    }
+
+    .left-nav li a{
+   
+        color: rgb(253, 250, 250);
+        padding: 1.3rem;
+        font-size: 1.5rem;
+       
+       text-decoration: none;
+       
+    }
+   
+   
+    
+    .right-nav{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    
+   .burger{
+    display: block;
+   }
+  .height-nav-resp{
+    height:72px;
+  }
+
+  .visibilty-resp{
+    opacity: 0;
+  }
+
+  .background{
+    width:100vw;
+   
+    background: black ;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    color: aliceblue;
+    max-width: 100%;
+    margin: auto;
+    height:80%;
+    
+}
+
+
+.paras{
+    padding:0px 1px;
+}
+
+.left{
+    flex-direction: row-reverse;
+    margin-left: 3rem;
+    
+  }
+
+.text-big{
+   
+    font-size: 31px;
+    
+    
+
+}
+.text-sm{
+    font-size: 15px;
+
+}
+.second-half img{
+    width: 80%;
+    height:80%;
+ 
+    padding: 1px 0;
+    border: 4px solid white;
+    border-radius: 250px;
+    display: block;
+    margin: auto;
+}
+.text-big1{
+    font-size: 34px;
+    text-align: center;
+    
+
+}
+.text-sm1{
+    font-size: 20px;
+    text-align: center;
+
+}
+.btn{
+    
+    margin-top: 0.5rem;
+    text-align: center;
+    
+   border-radius: 10px;
+ background: none;
+ color: white;
+ cursor: pointer;
+
+
+    width:5rem;
+    height:1.9rem;
+    border: 2px solid rgb(233, 165, 19);
+    
+}
+.section{
+   flex-direction: column-reverse;
+    
+    
+
+}
+
+}
+    
+
+
+
+

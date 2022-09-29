@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact us</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+body{
+    background:  rgb(233, 165, 19) url('contactimg6.jpg');
+   
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+  
+   
+
+}
+
+.left-nav{
+    display: flex;
+    
+    align-items: center;
+   
+    width:75%;
+}
+.left-nav li a{
+   
+    color: rgb(253, 250, 250);
+    padding: 1.7rem;
+    font-size: 1.2rem;
+   
+   text-decoration: none;
+   
+}
+
+.left-nav li a:hover{
+   
+    color: rgb(233, 165, 19);
+    
+}
+.left-nav li {
+    
+    list-style: none;
+   
+}
+
+.right-nav{
+    
+    
+    
+    width:25%;
+    text-align: right;
+    margin-top: 1.5rem;
+
+}
+.left-nav img{
+    width:5rem;
+    height:4rem;
+    border-radius: 70%;
+    border:2px solid black ;
+}
+
+#search{
+    height:1.7rem;
+    padding: 3px;
+    font-size: 13px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.btn{
+    margin-top: 0.5rem;
+    
+   border-radius: 10px;
+ background: none;
+ color: white;
+ cursor: pointer;
+
+
+    width:4rem;
+    height:1.5rem;
+    border: 2px solid rgb(233, 165, 19);
+    
+}
+
+.btn:hover{
+    background-color: rgb(192, 177, 177);;
+
+    
+}
+
+.background{
+    width:100vw;
+    background:  rgb(180, 134, 134) url('contactimg6.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right:5%;
+    top:15px;
+    display: none;
+
+
+}
+.line{
+    width:33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 5px;
+}
+
+.footer{
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+ }
+
+
+form{
+    background: rgba(27,34,31,0,80);
+    width: 640px;
+    margin: 50px auto;
+    max-width: 97%;
+    border-radius: 4px;
+    padding: 55px 30px;
+}
+form .title h2{
+    letter-spacing: 6px;
+    color:white;
+    border-bottom: 1px solid white;
+    display:inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+}
+
+form .half{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+form .half .items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+   
+    width: 48%;
+}
+
+
+form label{
+   
+    display: block;
+    font-size: 15px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+}
+
+form .half .item input{
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid white;
+    outline:0;
+padding:16px;
+width:100%;
+height:44px;
+background: transparent;
+font-size: 17px;;
+
+}
+
+form .full{
+    color: white;
+    margin-bottom: 24px;
+}
+
+    form .full textarea{
+        background: transparent;
+        border-radius: 4px;
+        border:1px solid white;
+        outline: 0;
+        padding: 12px 16px;
+        width: 100%;
+    color: #fff;
+    height: 200px;
+    font-size: 17px;
+
+}
+
+form .action{
+    margin-bottom: 32px;
+}
+
+form .action input{
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    height: 44px;
+    letter-spacing: 3px;
+    outline: 0;
+    padding: 0 20px 0 22px;
+    margin-right: 10px;
+
+}
+form .action input[type="submit"]{
+    background: white;
+    color: black;
+    
+}
+form .icons a{
+    border:1px solid rgb(15, 15, 15);
+    border-radius: 50%;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 600;
+    width:38px;
+    margin-right: 10px;
+
+}
+
+form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover{
+    background: rgba(236, 141, 8, 0.075);
+}
+.error{
+    color: red;
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+
+}
+
+#success{
+    color: green;
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    text-align: center;
+}
+
+.popup img{
+    
+    margin-top:-15%;
+   
+    width:100px;
+    
+   
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+.popup p{
+    text-align: center;
+}
+.popup button{
+    height: 15% ;
+    width:100%;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background: rgb(233, 165, 19);
+    color: #fff;
+    border:0;
+    outline:none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);;
+}
+.popup{
+    width:400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color:  #333;
+   opacity: 0;
+    
+    transition: opacity 300ms ease-in-out, top 1000ms ease-in-out;
+    
+}
+.visi{
+    transition: transform 3000ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+ 
+  opacity: 1;
+   top:50%;
+    transform: translate(-50%, -50%) scale(1);
+
+
+}
+
+
+   
+ .footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: black url('beauty1crop2.jpg');
+    background-blend-mode: darken;
+    color: white;
+ }
+
+ 
+
+@media(max-width:480px){
+    form .half{
+        flex-direction: column;
+    }
+
+    form .half .item{
+        width:100%;
+    }
+
+    form .action{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .action input{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    
+.popup h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 5px;
+    text-align: center;
+}
+
+.popup img{
+    
+    margin-top:-15%;
+   
+    width:100px;
+    
+   
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+.popup p{
+    text-align: center;
+}
+.popup button{
+    height: 15% ;
+    width:100%;
+    margin-top: 50px;
+    padding: 10px 0px;
+    background: rgb(233, 165, 19);
+    color: #fff;
+    border:0;
+    outline:none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);;
+}
+.popup{
+    width:200px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color:  #333;
+   opacity: 0;
+    
+    transition: opacity 300ms ease-in-out, top 1000ms ease-in-out;
+    
+}
+
+
+}
+
+
+
+@media only screen and (max-width :1140px){
+
+    
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem;
+    height: 400px;
+    transition: all 0.3s ease-out;
+}
+.left-nav{
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items:center;
+   
+    width:50%;
+}
+
+
+
+.right-nav{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.burger{
+display: block;
+}
+.height-nav-resp{
+height:72px;
+}
+
+.visibilty-resp{
+opacity: 0;
+}
+
+.background{
+width:100vw;
+
+background: black ;
+background-size: cover;
+background-blend-mode: darken;
+}
+}
+    </style>
+
+
+  <header class="header background height-nav-resp">
+        <div class="left-nav visibilty-resp">
+            <li><img src="logo4.jpg "></li>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="aboutusbeauty.html" target="_blank">About us</a></li>
+            <li><a href="servicescontact.html" target="_blank">Services</a></li>
+            <li><a href="contact us -beauty.html" target="_blank">Contact us</a></li>
+        </div>
+        <div class="right-nav visibilty-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-lg">Search</button>
+        </div>
+
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+    
+
+        
+      
+        
+
+        <form onsubmit="event.preventDefault(); validateform()" action=" ">
+        <div class="title">
+            <h2>Contact us</h2>
+        </div>
+        <div class="half">
+            <div class="item">
+                <lable for="name" ><b>NAME</b></lable>
+                <input type="text" placeholder="Your Name" id="name">
+                <small class="error"></small>
+            </div>
+            <div class="item">
+                <lable for="email"><b>EMAIL</b></lable>
+                <input type="text" placeholder="Your Email" id="email">
+                <small class="error"></small>
+            </div>
+        </div>
+        <div class="full">
+            <lable for="message"><b>MESSAGE</b></lable>
+            <textarea name="" id="message" placeholder="Your Message"></textarea>
+            <small class="error"></small>
+        </div>
+        <div class="action">
+            <input type="submit" id="openpopup"  value ="SEND MESSAGE">
+          
+            <input type="reset" value="RESET">
+
+        </div>
+
+        <dv class="icons">
+            <a href="https://twitter.com/kasheesofficial?lang=en" target="_blank" class="fa-brands fa-twitter fa-2x"></a>
+            <a href="https://www.facebook.com/KasheesBeautyParlor/"  target="_blank" class="fa-brands fa-facebook fa-2x"></a>
+            <a href="https://www.instagram.com/kashees_official/?hl=en" target="_blank" class="fa-brands fa-instagram fa-2x"></a>
+            <a href="https://github.com/sushiswap/kashi-lending" target="_blank" class="fa-brands fa-github fa-2x"></a>
+        </dv>
+
+        </form>
+
+       
+          
+
+        
+<footer class="footer">
+    <p class="text-center">   Copyright &copy; 2022 All Right Reserved</p>
+    
+    </footer>
+
+
+    
+    <script>
+const nameinput=document.getElementById("name");
+const emailinput=document.getElementById("email");
+const messageinput=document.getElementById("message");
+const error=document.querySelectorAll(".error");
+const success=document.getElementById("success");
+
+
+    function validateform(){
+           
+            clearmessages();
+            let errorFlag =false;
+
+            if(nameinput.value.length <1){
+                error[0].innerText = error.innerText+" Name cannot be empty."
+                
+            nameinput.classList.add("error-border");   
+            errorFlag =true;      
+           }
+
+           if(!emailisvalid(emailinput.value)){
+            error[1].innerText= "invalid email address";
+            emailinput.classList.add("error-border");
+            errorFlag =true;  
+           }
+
+
+           if(messageinput.value.length <1){
+
+error[2].innerText= "Please enter message";
+        messageinput.classList.add("error-border");
+        errorFlag =true;  
+
+}
+
+if(!errorFlag){
+
+   
+  const popup1=document.createElement('div');
+  popup1.classList.add('popup1');
+  const htmlData= ` 
+  <div class="popup">
+  <img src="tick.jpg">
+                <h2>Thank you</h2>
+                <p>your message has been succesfully sent. Thanks!</p>
+                <button id="btn"  >OK</button>
+                </div>`;
+               
+         popup1.insertAdjacentHTML('afterbegin', htmlData);
+        
+         document.getElementById("openpopup").addEventListener("click", function(){
+            popup1.querySelector('.popup').classList.add("visi");
+        });
+        popup1.querySelector('#btn').addEventListener("click", function(){
+            popup1.querySelector('.popup').classList.remove("visi");
+        });
+
+        document.body.appendChild(popup1);        
+
+
+   
+}
+        }
+
+       
+
+        function clearmessages(){
+            for(let i=0 ; i  <error.length; i++){
+                error[i].innerText="";
+            }
+
+           
+            nameinput.classList.remove("error-border");
+            emailinput.classList.remove("error-border");
+            messageinput.classList.remove("error-border");
+           
+        }
+
+
+        function emailisvalid(emailinput){
+            let pattern= /\S+@\S+\.\S+/;
+            return pattern.test(emailinput);
+        }
+       
+       
+
+    
+
+
+      
+        burger=document.querySelector('.burger');
+        header=document.querySelector('.header');
+        leftnav=document.querySelector('.left-nav');
+        rightnav=document.querySelector('.right-nav');
+       burger.addEventListener('click',()=>{
+           
+           rightnav.classList.toggle('visibilty-resp');
+           leftnav.classList.toggle('visibilty-resp');
+           header.classList.toggle('height-nav-resp');
+   
+       })
+
+
+
+   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+       AOS.init({
+           duration: 1500,
+       });
+
+      
+   
+     </script>
+    
+    
+</body>
+</html>
+
+
